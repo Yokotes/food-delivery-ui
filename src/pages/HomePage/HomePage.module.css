@@ -1,0 +1,59 @@
+.page {
+  background-color: #F2F2F2;
+}
+
+.page .container {
+  height: auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 43px;
+}
+
+.burger {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  background: none;
+  border: none;
+}
+
+.burger span {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  transform: scaleX(50%);
+  transform-origin: 0 0;
+}
+
+.burger span:first-child {
+  transform: translateY(6px);
+}
+
+.burger span:last-child {
+  transform: translateY(-6px);
+}
+
+.title {
+  font-family: "SF Pro Rounded", sans-serif;
+  font-weight: bold;
+  font-size: 34px;
+  margin-bottom: 28px;
+}
+
+.food {
+  padding-left: 50px;
+}
+
+.cart {
+  opacity: 0.3;
+}

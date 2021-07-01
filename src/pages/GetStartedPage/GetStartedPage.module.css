@@ -1,0 +1,39 @@
+.page {
+  background: no-repeat url('./get-started-img.png')
+            #FF4B3A;
+  background-position: center bottom;
+}
+
+.container {
+  height: 100%;
+  padding: 50px;
+  padding: 56px;
+  padding-bottom: 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logoContainer {
+  background-color: #fff;
+  width: 73px;
+  height: 73px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.logo {
+  width: 45px;
+}
+
+.slogan {
+  color: #FFFFFF;
+  letter-spacing: -0.03em;
+  line-height: 86.84%;
+  font-family: "SF Pro Rounded", sans-serif;
+  font-weight: 800;
+  font-size: 65px;
+  margin-top: 30px;
+}

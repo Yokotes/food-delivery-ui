@@ -1,0 +1,14 @@
+.panel {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item {
+  color: #ADADAF;
+  font-size: 24px;
+}
+
+.current {
+  color: #FA4A0C;
+  text-shadow: 0px 6px 20px #fa4b0caa;
+}

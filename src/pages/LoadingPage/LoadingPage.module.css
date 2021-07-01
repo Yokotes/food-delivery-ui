@@ -1,0 +1,14 @@
+.page {
+  background: url('./loading-page-img.png') no-repeat;
+  background-size: auto;
+  background-position: center 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 0 5px;
+}

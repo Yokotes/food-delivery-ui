@@ -1,0 +1,65 @@
+.page {
+  background-color: #F6F6F9;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header a {
+  color: #000;
+  text-decoration: none;
+}
+
+.loved {
+  background: none;
+  border: none;
+  font-size: 20px;
+}
+
+.content {
+  margin-top: 14px;
+}
+
+.title {
+  font-family: "SF Pro Rounded";
+  font-weight: 600;
+  font-size: 28px;
+  text-align: center;
+  margin-top: 45px;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-family: "SF Pro Rounded";
+  font-weight: bold;
+  font-size: 22px;
+  text-align: center;
+  color: #FA4A0C;
+  margin-bottom: 40px;
+}
+
+.section {
+  margin-bottom: 46px;
+}
+
+.section:last-child {
+  margin-bottom: 0;
+}
+
+.sectionTitle {
+  font-family: "SF Pro Rounded", sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+  color: #000000;
+  margin-bottom: 7px;
+}
+
+.text {
+  font-family: "SF Pro Text", sans-serif;
+  font-size: 15px;
+  color: #000000;
+  opacity: 0.5;
+  line-height: 138.84%;
+}

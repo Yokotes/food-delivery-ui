@@ -1,0 +1,21 @@
+.container {
+  background-color: #EFEEEE;
+  padding: 20px 30px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.input {
+  font-size: 17px;
+  font-family: "SF Pro Rounded", sans-serif;
+  font-weight: 600;
+  background: none;
+  border: none;
+  margin-left: 13px;
+  width: 100%;
+}
+
+.input:focus {
+  outline: none;
+}

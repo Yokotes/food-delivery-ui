@@ -1,0 +1,19 @@
+.btn {
+  border-radius: 30px;
+  border: none;
+  padding: 25px 50px;
+  font-weight: 600;
+  font-family: "SF Pro Text", sans-serif;
+  font-size: 17px;
+  width: 100%;
+}
+
+.white {
+  background: #FFFFFF;
+  color: #FF460A;
+}
+
+.orange {
+  background: #FA4A0C;
+  color: #FFFFFF
+}

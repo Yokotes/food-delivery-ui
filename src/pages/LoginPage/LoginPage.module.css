@@ -1,0 +1,87 @@
+.page {
+  background-color: #F2F2F2;
+}
+
+.page .container {
+  height: calc(100% - 367px);
+}
+
+.header {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  height: 367px;
+  background-color: #FFFFFF;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+}
+
+.logo {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  padding: 0px 50px;
+}
+
+.navBtn {
+  flex-grow: 1;
+  padding: 15px 0px;
+  background: none;
+  border: none;
+  font-family: "SF Pro Text", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  position: relative;
+  border-radius: 40px;
+}
+
+.navBtn.current::after {
+  display: block;
+}
+
+.navBtn::after {
+  content: '';
+  display: block;
+  background-color: #FA4A0C;
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  bottom: -1.5px;
+  display: none;
+}
+
+.form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.input {
+  margin-bottom: 46px;
+}
+
+.input:last-child {
+  margin-bottom: 0;
+}
+
+.inputs {
+  margin-bottom: 34px;
+}
+
+.link {
+  color: #FA4A0C;
+  font-size: 17px;
+  text-decoration: none;
+  font-family: "SF Pro Text", sans-serif;
+  font-weight: 600;
+}
