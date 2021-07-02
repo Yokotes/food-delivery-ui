@@ -1,0 +1,117 @@
+.container {
+  position: relative;
+}
+
+.item {
+  background: #FFFFFF;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.03);
+  border-radius: 20px;
+  padding: 15px;
+  max-width: 315px;
+  position: relative;
+  z-index: 1;
+  transition: transform 1s
+}
+
+.swiped {
+  transform: translateX(-50%);
+}
+
+.content {
+  display: flex;
+  align-items: center;
+}
+
+.imgContainer {
+  flex-basis: 70px;
+  margin-right: 15px;
+}
+
+.img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.title {
+  font-family: "SF Pro Rounded", sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-family: "SF Pro Rounded", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  color: #FA4A0C;
+}
+
+.counter {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  overflow: hidden;
+  display: flex;
+  width: 52px;
+  height: 20px;
+}
+
+.counter > * {
+  background-color: #FA4A0C;
+  border: none;
+  color: #fff;
+}
+
+.counterBtn {
+  width: 15px;
+  font-family: "SF Pro Rounded";
+  font-weight: 600;
+  font-size: 10px;
+  color: #F4F4F7;
+}
+
+.counterBtn:first-child {
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.counterBtn:last-child {
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.counterInput {
+  width: 20px;
+  font-family: "SF Pro Rounded", sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  text-align: center;
+}
+
+.counterInput:focus {
+  outline: none;
+}
+
+.swipeBtns {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  z-index: 0;
+}
+
+.swipeBtn {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #DF2C2C;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+.swipeBtn:first-child {
+  margin-right: 15px;
+}

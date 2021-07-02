@@ -42,15 +42,19 @@ export default class Catalog extends Component {
         <PrimaryLink href="/" className={styles.link}>
           see more
         </PrimaryLink>
-        <div className={styles.catalogContent}>
-          <div className={styles.itemsContainer}>
+        <div className={`${styles.catalogContent} ${styles.itemsContainer}`}>
+          <FoodItem
+              imgSrc={`${process.env.PUBLIC_URL}/img/0.png`}
+              itemId={0}
+              price="N1,900"
+              title="Veggie tomato mix"
+            />
             <FoodItem
               imgSrc={`${process.env.PUBLIC_URL}/img/0.png`}
               itemId={0}
               price="N1,900"
               title="Veggie tomato mix"
             />
-          </div>
         </div>
       </div>
     )

@@ -1,0 +1,28 @@
+.page {
+  background-color: #F5F5F8;
+}
+
+.section {
+  margin-top: 48px;
+}
+
+.info > * {
+  min-width: 60px
+}
+
+.info li {
+  opacity: .5;
+  border-bottom: none;
+  padding: 4px 0;
+}
+
+.info li:first-child {
+  opacity: 1;
+}
+
+.changeBtn {
+  background: none;
+  border: none;
+  position: absolute;
+  right: 30px;
+}

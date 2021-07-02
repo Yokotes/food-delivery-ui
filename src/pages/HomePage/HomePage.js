@@ -8,7 +8,7 @@ import Catalog from '../../components/Catalog/Catalog';
 export default class HomePage extends Component {
   render() {
     return (
-      <div className={`page ${styles.page}`}>
+      <div className={styles.page}>
         <Container className={styles.container}>
           <div className={styles.header}>
             <button className={styles.burger}>

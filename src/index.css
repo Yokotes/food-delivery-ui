@@ -34,6 +34,13 @@
   src: url("./fonts/sf-pro-text/sf-pro-text-regular.ttf") format("truetype");
 }
 
+
+@font-face {
+  font-family: "SF Pro Text";
+  font-weight: 500;
+  src: url("./fonts/sf-pro-text/sf-pro-text-medium.ttf") format("truetype");
+}
+
 @font-face {
   font-family: "SF Pro Text";
   font-weight: 600;
@@ -45,9 +52,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+/* 
 .page {
   width: 100vw;
   height: 100vh;
+  max-height: 100vh;
   position: relative;
-}
+} */

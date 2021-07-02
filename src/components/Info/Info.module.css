@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  gap: 15px;
+  width: 100%;
+}
+
+
+.imgContainer {
+  min-width: 91px;
+  flex-shrink: 1;
+  flex-grow: 1;
+}
+
+.img {
+  width: 100%;
+}
+
+.info {
+  width: auto;
+  list-style: none;
+  flex-shrink: 1;
+  flex-grow: 0;
+}
+
+.record {
+  font-size: 15px;
+  border-bottom: 0.5px solid #00000055;
+  padding: 8px 0;
+  word-break: break-word;
+}
+
+.record:last-child {
+  border: none;
+}
+
+.boldRecord {
+  font-weight: 500;
+  font-size: 17px;
+}

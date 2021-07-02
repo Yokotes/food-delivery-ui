@@ -1,0 +1,38 @@
+.page {
+  background-color: #F5F5F8;
+}
+
+.title {
+  margin-bottom: 45px;
+}
+
+.profileBtn {
+  margin-top: 27px;
+}
+
+.profileBtn:last-child {
+  margin-bottom: 20px;
+}
+
+.wideBtn {
+  display: block;
+  padding: 20px;
+  background: #FFFFFF;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.03);
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  color: #000;
+}
+
+.btnContent {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.changeLink {
+  position: absolute;
+  right: 0;
+  top: 0;
+}

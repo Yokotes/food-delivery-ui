@@ -10,17 +10,22 @@ export default function FoodItem({
 }) {
   return (
     <Link to='/' className={styles.item}>
-      <img
-        src={imgSrc}
-        alt="Food"
-        className={styles.img}
-      />
+      <div className={styles.imgContainer}>
+        {/* Image */}
+        <img
+          src={imgSrc}
+          alt="Food"
+          className={styles.img}
+        />
+      </div>
       <div className={styles.itemBody}>
+        <div className={styles.bodyContent}>
         <h4 className={styles.title}>
           {title}
         </h4>
         <div className={styles.price}>
           {price}
+        </div>
         </div>
       </div>
     </Link>

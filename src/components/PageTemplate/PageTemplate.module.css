@@ -1,0 +1,23 @@
+.template {
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100%;
+}
+
+.contentContainer {
+  overflow-x: scroll;
+  overflow-y: scroll;
+  flex-grow: 1;
+  /* flex-shrink: 1; */
+}
+
+.content {
+  overflow-y: auto;
+  height: 100%;
+}
