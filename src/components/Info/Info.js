@@ -20,9 +20,13 @@ export default function Info({
 
   return (
     <div className={`${styles.container}  ${className}`}>
-      <div className={styles.imgContainer}>
-        {img}
-      </div>
+      {
+        img && (
+          <div className={styles.imgContainer}>
+            {img}
+          </div>
+        )
+      }
       <ul className={styles.info}>
         {records}
       </ul>

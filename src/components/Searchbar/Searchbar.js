@@ -1,19 +1,29 @@
 import React from 'react';
 import styles from './Searchbar.module.css';
+import {withRouter} from 'react-router-dom'
 
-export default function Searchbar() {
+function Searchbar({history}) {
+
+  const onSubmitForm = (e) => {
+    e.preventDefault();
+    history.push(`/search/${e.target[0].value}`);
+  }
+
   return (
-    <div className={styles.container}>
+    <form className={styles.container} onSubmit={onSubmitForm}>
       <div className={styles.icon}>
       <i className="fas fa-search"></i>
       </div>
       <div className={styles.inputContainer}>
         <input
+          name="search"
           type="text"
           className={styles.input}
           placeholder="Search"
         />
       </div>
-    </div>
+    </form>
   )
 }
+
+export default withRouter(Searchbar)

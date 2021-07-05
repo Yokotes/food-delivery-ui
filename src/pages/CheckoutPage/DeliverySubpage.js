@@ -3,7 +3,6 @@ import styles from './CheckoutPage.module.css';
 import PageSection from '../../components/PageSection/PageSection';
 import {
   DeliveryRadioGroup,
-  PaymentRadioGroup
 } from '../../components/FoodDeliveryComponents';
 import Info from '../../components/Info/Info';
 import Record from '../../components/Info/Record';

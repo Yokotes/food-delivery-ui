@@ -1,17 +1,16 @@
 import React from 'react';
 import styles from './FoodDetailsPage.module.css';
-import Container from '../../components/Container/Container';
 import {Link} from 'react-router-dom';
 import Button from '../../components/Button/Button';
 import Slider from '../../components/Slider/Slider';
 import PageTemplate from '../../components/PageTemplate/PageTemplate';
 import PageContent from '../../components/PageTemplate/PageContent';
 
-export default function FoodDetailsPage() {
+function FoodDetailsPage() {
   return (
     <PageTemplate className={styles.page}>
         <div className={styles.header}>
-          <Link to="/">
+          <Link to="/home">
             <i className="fas fa-chevron-left"></i>
           </Link>
           <button className={styles.loved}>
@@ -51,3 +50,5 @@ export default function FoodDetailsPage() {
     </PageTemplate>
   )
 }
+
+export default FoodDetailsPage;

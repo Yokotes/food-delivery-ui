@@ -10,22 +10,22 @@ export default class FooterPanel extends Component {
       {
         id: 0,
         icon: <i className="fas fa-home"></i>,
-        pathTo: '/'
+        pathTo: '/home'
       },
       {
         id: 1,
         icon: <i className="far fa-heart"></i>,
-        pathTo: '/'
+        pathTo: '/offers'
       },
       {
         id: 2,
         icon: <i className="far fa-user"></i>,
-        pathTo: '/'
+        pathTo: '/profile'
       },
       {
         id: 3,
         icon: <i className="fas fa-history"></i>,
-        pathTo: '/'
+        pathTo: '/history'
       }
     ],
     currentItem: 0

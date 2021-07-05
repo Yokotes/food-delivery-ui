@@ -1,13 +1,18 @@
 import React from 'react';
-import styles from './PageHeader.module.css'
+import {withRouter} from 'react-router-dom';
+import styles from './PageHeader.module.css';
 
-
-export default function PageHeader({
-  title
+function PageHeader({
+  title,
+  history
 }) {
+  const onBack = () => {
+    history.goBack();
+  }
+
   return (
     <div className={styles.header}>
-      <button className={styles.arrowBack}>
+      <button className={styles.arrowBack} onClick={onBack}>
         <i className="fas fa-chevron-left"></i>
       </button>
       <div className={styles.title}>
@@ -16,3 +21,5 @@ export default function PageHeader({
     </div>
   )
 }
+
+export default withRouter(PageHeader)

@@ -1,0 +1,98 @@
+.page {
+  background-color: #F5F5F8;
+  position: relative;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  text-align: center;
+}
+
+.img {
+  width: 100%;
+  max-width: 108px;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 28px;
+  margin-top: 27px;
+  margin-bottom: 20px;
+}
+
+.text {
+  font-size: 17px;
+  opacity: 0.57;
+}
+
+.input {
+  font-family: 'SF Pro Rounded', sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+  max-width: 200px;
+  background: none;
+  border: none;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.result {
+  display: flex;
+  position: absolute;
+  background-color: #fff;
+  width: 100%;
+  height: calc(100% - 130px);
+  top: 130px;
+  left: 0;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  padding-top: 35px;
+}
+
+.resultTitle {
+  font-family: 'SF Pro Rounded', sans-serif;
+  font-weight: bold;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.resultContent {
+  width: 100%;
+  display: flex;
+  padding-bottom: 20px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 0 20px;
+  gap: 20px
+}
+
+.item img {
+  width: 85%;
+  height: unset;
+}
+
+.item div {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.item > div:nth-child(2) {
+  margin-top: -70px;
+}
+
+.item h4 {
+  padding-top: 30px;
+}

@@ -1,38 +1,32 @@
 import React, { Component } from 'react';
 import styles from './HomePage.module.css';
-import Container from '../../components/Container/Container';
-import Searchbar from '../../components/Searchbar/Searchbar';
-import FooterPanel from '../../components/FooterPanel/FooterPanel';
-import Catalog from '../../components/Catalog/Catalog';
+import HomeContent from './HomeContent';
+import Menu from './Menu';
 
 export default class HomePage extends Component {
+
+  // Component state
+  state = {
+    menuShowed: false
+  }
+
+  onBurgerClick = () => {
+    this.setState(({menuShowed}) => {
+      return {
+        menuShowed: !menuShowed,
+      }
+    });
+  }
+
+  // Render component
   render() {
     return (
-      <div className={styles.page}>
-        <Container className={styles.container}>
-          <div className={styles.header}>
-            <button className={styles.burger}>
-              <span></span>
-              <span></span>
-              <span></span>
-            </button>
-            <div className={styles.cart}>
-              <i className="fas fa-shopping-cart"></i>
-            </div>
-          </div>
-          <h2 className={styles.title}>
-            Delicious
-            <br />
-            food for you
-          </h2>
-          <Searchbar />
-        </Container>
-        <div className={styles.food}>
-          <Catalog />
-        </div>
-        <Container className={styles.container}>
-          <FooterPanel />
-        </Container>
+      <div className={styles.container}>
+        <HomeContent
+          onBurgerClick={this.onBurgerClick}
+          isShifted={this.state.menuShowed}
+        />
+        <Menu />
       </div>
     )
   }

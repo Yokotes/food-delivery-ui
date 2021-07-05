@@ -4,9 +4,9 @@ import Container from '../../components/Container/Container';
 import Button from '../../components/Button/Button';
 import Logo from '../../components/Logo/Logo';
 import Input from '../../components/Input/Input';
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 
-export default class LoginPage extends Component {
+class LoginPage extends Component {
 
   // Component state
   state = {
@@ -19,10 +19,15 @@ export default class LoginPage extends Component {
     });
   }
 
+  onSubmitForm = (e) => {
+    e.preventDefault();
+    this.props.history.push('/home');
+  }
+
   // Render component
   render() {
     const { isLogin } = this.state;
-    const currentForm = isLogin ? <LoginForm /> : <SignUpForm />
+    const currentForm = isLogin ? <LoginForm onSubmit={this.onSubmitForm} /> : <SignUpForm onSubmit={this.onSubmitForm} />
 
     return (
       <div className={`page ${styles.page}`}>
@@ -53,9 +58,13 @@ export default class LoginPage extends Component {
   }
 }
 
-const LoginForm = () => {
+export default withRouter(LoginPage)
+
+const LoginForm = ({
+  onSubmit
+}) => {
   return (
-    <form className={styles.form}>
+    <form className={styles.form} onSubmit={onSubmit}>
       <div className={styles.fields}>
         <div className={styles.inputs}>
           <Input
@@ -82,9 +91,11 @@ const LoginForm = () => {
   )
 }
 
-const SignUpForm = () => {
+const SignUpForm = ({
+  onSubmit
+}) => {
   return (
-    <form className={styles.form}>
+    <form className={styles.form} onSubmit={onSubmit}>
       <div className={styles.fields}>
         <div className={styles.inputs}>
           <Input

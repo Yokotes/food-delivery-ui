@@ -6,8 +6,16 @@ import Container from '../../components/Container/Container';
 import PageContent from '../../components/PageTemplate/PageContent';
 import CartItem from '../../components/CartItem/CartItem';
 import img from './swipe-img.svg'
+import { withRouter } from 'react-router-dom';
 
-export default function CartPage() {
+function CartPage({
+  history
+}) {
+
+  const onCheckoutClick = () => {
+    history.push('/checkout/delivery');
+  }
+
   return (
     <div className={styles.page}>
       <Container>
@@ -33,10 +41,12 @@ export default function CartPage() {
         </div>
       </PageContent>
       <Container>
-        <Button>
+        <Button onClick={onCheckoutClick}>
           Complete order
         </Button>
       </Container>
     </div>
   )
 }
+
+export default withRouter(CartPage)

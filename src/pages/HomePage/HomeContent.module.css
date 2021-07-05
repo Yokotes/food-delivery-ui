@@ -1,0 +1,98 @@
+.page {
+  height: 100vh;
+  max-height: 100vh;
+  width: 100vw;
+  z-index: 1;
+  transition: transform .5s;
+  /* overflow: hidden; */
+}
+
+.shifted {
+  transform: scale(.5) translateX(85%);
+}
+
+.page::before {
+  content: '';
+  display: none;
+  background-color: #fff;
+  opacity: .3;
+  width: 100%;
+  height: calc(100% - 50px);
+  position: absolute;
+  top: 70px;
+  left: -35px;
+  border-radius: 30px;
+  z-index: 0;
+}
+
+.shifted::before {
+  display: block;
+}
+
+.shifted > .content {
+  border-radius: 30px;
+}
+
+.content {
+  background-color: #F2F2F2;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 43px;
+}
+
+.burger {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  background: none;
+  border: none;
+}
+
+.burger span {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  transform: scaleX(50%);
+  transform-origin: 0 0;
+}
+
+.burger span:first-child {
+  transform: translateY(6px);
+}
+
+.burger span:last-child {
+  transform: translateY(-6px);
+}
+
+.title {
+  font-family: "SF Pro Rounded", sans-serif;
+  font-weight: bold;
+  font-size: 34px;
+  margin-bottom: 28px;
+}
+
+.food {
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding-left: 50px;
+}
+
+.cart {
+  opacity: 0.3;
+  color: #000;
+}

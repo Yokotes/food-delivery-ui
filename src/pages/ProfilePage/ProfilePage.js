@@ -45,7 +45,7 @@ export default function ProfilePage() {
         </PageSection>
         <ProfileBtn
           className={styles.profileBtn}
-          to='/'
+          to='/orders'
         >
           Orders
         </ProfileBtn>

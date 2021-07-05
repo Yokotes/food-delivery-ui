@@ -1,0 +1,63 @@
+.menu {
+  z-index: 0;
+  background-color: #FA4A0C;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.nav {
+  list-style: none;
+  flex-shrink: 0;
+}
+
+.nav li a{
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.nav img {
+  margin-right: 13px;
+}
+
+.nav span {
+  padding: 26px 0;
+  border-bottom: 1px solid #fff;
+  flex-grow: 1;
+}
+
+.nav li:last-child span {
+  border-bottom: none;
+}
+
+.btnsContainer {
+  padding-top: 20px;
+  padding-bottom: 80px;
+}
+
+.signOutBtn {
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.signOutBtn a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.signOutBtn span {
+  margin-right: 13px;
+}

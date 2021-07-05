@@ -53,7 +53,7 @@ export default class CartItem extends Component {
         </div>
         <div className={styles.swipeBtns}>
           <button className={styles.swipeBtn}>
-            <i class="far fa-heart"></i>
+            <i className="far fa-heart"></i>
           </button>
           <button className={styles.swipeBtn}>
             <i className="far fa-trash-alt"></i>

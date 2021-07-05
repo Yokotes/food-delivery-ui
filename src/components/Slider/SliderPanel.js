@@ -10,6 +10,7 @@ export default function SliderPanel({
   for (let i = 0; i < itemsCount; i++) {
     buttons.push(
       <button
+        key={i}
         className={i === currentItem ? styles.current : null}
       ></button>
     )

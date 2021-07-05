@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './GetStartedPage.module.css';
 import Button from '../../components/Button/Button';
 import Logo from '../../components/Logo/Logo';
+import { Link } from 'react-router-dom';
 
 export default function GetStartedPage() {
   return (
@@ -16,7 +17,9 @@ export default function GetStartedPage() {
           </h1>
         </div>
         <Button theme="white">
-            Get Started
+            <Link to='/login'>
+              Get Started
+            </Link>
         </Button>
       </div>
     </div>
